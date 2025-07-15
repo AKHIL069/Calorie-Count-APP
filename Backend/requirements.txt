@@ -1,0 +1,12 @@
+fastapi
+uvicorn
+sqlalchemy
+psycopg2-binary
+python-dotenv
+passlib
+pydantic[email]
+httpx
+python-jose
+rapidfuzz
+slowapi
+pytest
