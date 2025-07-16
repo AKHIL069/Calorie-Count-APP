@@ -16,7 +16,7 @@ const Login = () => {
     setError('');
     setLoading(true);
     try {
-      const res = await axios.post('http://localhost:8000/api/auth/login', form);
+      const res = await axios.post('https://calorie-count-app-backend.onrender.com/api/auth/login', form);
       localStorage.setItem('token', res.data.access_token);
       window.location.href = '/dashboard';
     } catch (err) {

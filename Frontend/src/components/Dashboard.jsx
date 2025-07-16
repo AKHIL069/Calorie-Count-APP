@@ -26,7 +26,7 @@ const Dashboard = () => {
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
-      const res = await axios.post('http://localhost:8000/api/get-calories', form, {
+      const res = await axios.post('https://calorie-count-app-backend.onrender.com/api/get-calories', form, {
         headers: { Authorization: `Bearer ${token}` },
       });
       setResult(res.data);
