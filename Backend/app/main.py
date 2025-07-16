@@ -19,7 +19,7 @@ async def rate_limit_handler(request: Request, exc: RateLimitExceeded):
 # CORS
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=["*"],
+    allow_origins=["https://sunny-meringue-2ec49f.netlify.app"],
     allow_credentials=True,
     allow_methods=["*"],
     allow_headers=["*"]
